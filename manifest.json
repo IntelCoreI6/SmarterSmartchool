@@ -1,7 +1,7 @@
 {
   "name": "Smarter Smartschool",
   "short_name": "SmarterSS",
-  "version": "5.9",
+  "version": "5.10",
   "description": "Makes Smartschool smarter.",
   "permissions": [
     "activeTab",
@@ -52,6 +52,18 @@
         "BetterStyle.js"
       ],
       "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://spc.smartschool.be/results/main/table"
+      ],
+      "js": [
+        "BetterTable.js"
+      ],
+      "css": [
+        "static/css/sticky.css"
+      ],
+      "run_at":"document_end"
     }
   ],
   "web_accessible_resources": [

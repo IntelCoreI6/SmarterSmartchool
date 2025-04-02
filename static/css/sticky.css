@@ -1,0 +1,39 @@
+td.computed-percent,
+th.computed-percent {
+    box-sizing: border-box;
+    right: 0;
+    background-color: #fff; /* default background */
+    z-index: 1;
+    border: 1px solid #000;
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Percentage < 50: light red */
+td.computed-percent.low,
+th.computed-percent.low {
+    background-color: #eba1a7;
+}
+
+/* 50 <= Percentage < 60: orange */
+td.computed-percent.medium,
+th.computed-percent.medium {
+    background-color: #ebb95c;
+}
+
+/* 60 <= Percentage <= 75: light green */
+td.computed-percent.high,
+th.computed-percent.high {
+    background-color: #ace9ac;
+}
+
+/* Percentage > 75: dark green */
+td.computed-percent.very-high,
+th.computed-percent.very-high {
+    background-color: rgb(64, 143, 64)
+}
+
+.cell--course {
+    padding-right: 20px;
+}
